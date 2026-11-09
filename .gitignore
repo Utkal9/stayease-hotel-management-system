@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment files (only .env.example is committed)
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Test artifacts
+playwright-report/
+test-results/

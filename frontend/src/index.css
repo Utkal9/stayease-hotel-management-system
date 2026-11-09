@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #06152b;
+  --color-navy-900: #0b2240;
+  --color-navy-800: #12305a;
+  --color-navy-700: #1b4177;
+  --color-navy-100: #e6ecf5;
+
+  /* Palatino / Iowan Old Style ship with macOS and iOS; Georgia covers Windows. */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white font-sans text-neutral-900 antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-sky-500;
+  }
+}
